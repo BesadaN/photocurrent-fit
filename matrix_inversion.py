@@ -7,9 +7,9 @@
 
 
 def invert_2x2(a, b, c, d):
-    # DUMMY IMPLEMENTATION
-    e = a
-    f = b
-    g = c
-    h = d
+    det = (1 / (a*d-c*b))
+    e = det * d
+    f = det * -b
+    g = det * -c
+    h = det * a
     return e, f, g, h
